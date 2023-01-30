@@ -30,32 +30,59 @@
 
     <!-- Chatbot stylesheet -->
   <style>
-    .chat-box {
-      width: 500px;
-      height: 500px;
-      border: 1px solid black;
-      overflow-y: scroll;
-      padding: 10px;
+    body {
+      background-color: #212121;
+      color: white;
+      font-family: Arial, sans-serif;
     }
-    .message-container {
+    
+    .chat-container {
       display: flex;
-      justify-content: flex-start;
-      align-items: flex-start;
-      margin-bottom: 10px;
+      flex-direction: column;
+      align-items: center;
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
     }
+    
+    .chat-window {
+      width: 80%;
+      height: 70%;
+      overflow-y: scroll;
+      margin-top: 2rem;
+    }
+    
+    .chat-message {
+      width: 100%;
+      padding: 1rem;
+      box-sizing: border-box;
+      margin-bottom: 1rem;
+      border-radius: 10px;
+      background-color: #333;
+      color: white;
+      font-size: 1.2rem;
+    }
+    
     .user-message {
-      background-color: lightblue;
-      border-radius: 10px;
-      padding: 10px;
-      margin-right: 10px;
-      max-width: 80%;
+      text-align: right;
     }
+    
     .bot-message {
-      background-color: lightgray;
+      text-align: left;
+    }
+    
+    .message-input {
+      width: 80%;
+      height: 10%;
+      margin-top: 2rem;
+      padding: 1rem;
+      box-sizing: border-box;
+      border: none;
       border-radius: 10px;
-      padding: 10px;
-      margin-left: 10px;
-      max-width: 80%;
+      background-color: #333;
+      color: white;
+      font-size: 1.2rem;
+      outline: none;
     }
   </style>
 
